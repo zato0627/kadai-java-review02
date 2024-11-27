@@ -2,6 +2,7 @@
 public class Review01 {
 
 	public static void main(String[] args) {
+
 		double cash = 1500;
 		double tax = getTax(1500, 0.1);
 		double base = tax - cash;
