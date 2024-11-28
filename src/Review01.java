@@ -5,7 +5,7 @@ public class Review01 {
 
 		//cash=元の金額,tax=消費税,taxin=税込み価格
 		int cash = 1985;
-		int tax = tax(1985, 100, 10);
+		int tax = tax(cash, 100, 10);
 		int taxin = cash + tax;
 
 
