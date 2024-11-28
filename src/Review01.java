@@ -5,20 +5,23 @@ public class Review01 {
 
 		//cash=元の金額,tax=消費税,taxin=税込み価格
 		int cash = 1985;
-		double tax = tax(1985, 0.1);
-		int taxin = cash + (int)tax;
+		int tax = tax(1985, 100, 10);
+		int taxin = cash + tax;
 
 
-		System.out.println(cash + "円の商品の税込み価格は" + taxin + "円（消費税は" + (int)tax + "円）です");
+		System.out.println(cash + "円の商品の税込み価格は" + taxin + "円（消費税は" + tax + "円）です");
 
 	}
-	public static  double tax(double cash, double tax) {
+	public static  int tax(double cash, double num1, double num2) {
 		//消費税を計算してmainに戻す
 
 		//消費税を計算
-		double taxin = cash * tax;
+		double taxs = cash * (num2 / num1);
 
-		return taxin;
+		//intに変換
+		int tax = (int)taxs;
+
+		return tax;
 	}
 
 }
