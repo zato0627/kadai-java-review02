@@ -4,8 +4,8 @@ public class Review01 {
 	public static void main(String[] args) {
 
 		//cash=元の金額,tax=消費税,taxin=税込み価格
-		int cash = 1985;
-		int tax = tax(cash, 100, 10);
+		int cash = 3000;
+		int tax = tax(cash, 100, 10);//tax(数字, 100, 10)からtax(cash, 100, 10)に変更
 		int taxin = cash + tax;
 
 
